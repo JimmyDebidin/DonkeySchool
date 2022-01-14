@@ -18,16 +18,19 @@ ul {
 body {
   background-color: black;
   color: rgb(141, 220, 225);
+  font-family: Orbitron, Arial, Helvetica, sans-serif;
 }
 
 .banniere {
-  width: 100%;
+  width: 99%;
+  border-radius: 10px;
+  border-style: double;
 }
 
 /* Menu deroulant */
 li {
   list-style: none !important;
-  color: darkcyan;
+  color: rgb(141, 220, 225);
   padding: 10px;
   font-size: 20px;
   text-decoration: none;
@@ -36,25 +39,28 @@ li {
 nav ul {
   padding: 0;
   margin: 0;
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Orbitron, Arial, Helvetica, sans-serif;
 }
 
 nav ul li {
   list-style: none;
   line-height: 44px;
   float: left;
-  background-color: black;
+  background-color: rgb(250, 162, 42);
+  text-decoration: underline;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 nav ul li a {
-  color: darkcyan;
+  color: rgb(141, 220, 225);
   font-weight: bold;
   padding: 10px;
   font-size: 20px;
   text-decoration: none;
 }
 li a:hover {
-  border-bottom: 3px darkcyan solid;
+  border-bottom: 3px rgb(141, 220, 225);
 }
 
 nav ul li ul {
@@ -73,14 +79,10 @@ nav ul li:hover ul li {
   float: none;
 }
 /* H2 */
-.projet-title {
+h2 {
   text-align: center;
   text-decoration: underline;
   margin: 50px;
-}
-
-.img img:last-child {
-  filter: grayscale(1);
 }
 
 .img img {
@@ -89,4 +91,17 @@ nav ul li:hover ul li {
   border-radius: 10px;
   border-bottom: orange solid 2px;
   border-top: orange solid 2px;
+  display: block;
+  margin: auto;
+}
+
+.img p {
+  text-justify: auto;
+  text-align: center;
+  margin: 6%;
+}
+
+/* ne marche pas */
+.img img:last-child {
+  filter: grayscale(1);
 }
