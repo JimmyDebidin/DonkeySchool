@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
+
 </head>
 
 <body>
@@ -27,11 +28,11 @@
             <img src="https://via.placeholder.com/1900X250" alt="image de fond">
             <h2>Projets</h2>
             <div>
-                <img src="https://via.placeholder.com/100" alt="image projet 1">
-                <img src="https://via.placeholder.com/100" alt="image projet 2">
-                <img src="https://via.placeholder.com/100" alt="image projet 3">
-                <img src="https://via.placeholder.com/100" alt="image projet 4">
-                <img src="https://via.placeholder.com/100" alt="image projet 5">
+                <img src="https://via.placeholder.com/100" alt="projet 1">
+                <img src="https://via.placeholder.com/100" alt="projet 2">
+                <img src="https://via.placeholder.com/100" alt="projet 3">
+                <img src="https://via.placeholder.com/100" alt="projet 4">
+                <img src="https://via.placeholder.com/100" alt="projet 5">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugiat eius earum mollitia commodi
                     ipsum possimus, itaque ducimus temporibus esse.</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugiat eius earum mollitia commodi
@@ -76,18 +77,20 @@
         <section>
             <h2>Contact</h2>
             <form action="">
-                <div>
-                    <label for="">nom et prénom</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">e-mail</label>
-                    <input type="email">
-                </div>
-                <div>
-                    <label for="Message"></label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
+
+                <ul>
+                    <li> <label for="name">Nom et Prenom</label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+
+                    <li><label for="mail">E-mail</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </li>
+
+                    <li><label for="message">Message</label>
+                        <textarea name="user_message" id="message" cols="30" rows="5"></textarea>
+                    </li>
+                </ul>
             </form>
         </section>
     </main>
