@@ -1,0 +1,83 @@
+h1 {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: darkcyan;
+  font-style: oblique;
+  color: darkcyan;
+}
+
+header {
+  background-color: black;
+}
+/* Menu deroulant */
+li {
+  list-style: none !important;
+  color: darkcyan;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul li {
+  list-style: none;
+  line-height: 44px;
+  float: left;
+  background-color: black;
+}
+
+nav ul li a {
+  color: darkcyan;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+li a:hover {
+  border-bottom: 3px darkcyan solid;
+}
+
+nav ul li ul {
+  display: none;
+}
+
+nav ul li:hover ul {
+  z-index: 99999;
+  display: list-item !important;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: -10px;
+}
+
+nav ul li:hover ul li {
+  float: none;
+}
+
+/* Image projet */
+.img img {
+  border-radius: 3px;
+}
+
+.img img:last-child {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+}
+
+.img img:hover {
+  opacity: 0.7;
+}
+
+nav {
+  display: flex;
+}
