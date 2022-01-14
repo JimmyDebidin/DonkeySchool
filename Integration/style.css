@@ -20,9 +20,9 @@ li {
   text-decoration: none;
 }
 nav ul {
-  background-color: #64abfb;
   padding: 0;
   margin: 0;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 nav ul li {
   list-style: none;
@@ -66,4 +66,7 @@ nav ul li:hover ul li {
 }
 .img img:hover {
   opacity: 0.7;
+}
+nav {
+  display: flex;
 }
