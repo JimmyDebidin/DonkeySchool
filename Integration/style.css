@@ -6,13 +6,15 @@
 }
 
 h1 {
-  border: rgb(250, 162, 42)wq 2px solid;
+  border: rgb(250, 162, 42) 2px solid;
   text-decoration: underline;
   text-align: center;
 }
 
-ul {
-  list-style-type: none;
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 50px;
 }
 
 body {
@@ -28,6 +30,11 @@ body {
 }
 
 /* Menu deroulant */
+
+ul {
+  list-style-type: none;
+}
+
 li {
   list-style: none !important;
   color: rgb(141, 220, 225);
@@ -78,13 +85,8 @@ nav ul li:hover ul {
 nav ul li:hover ul li {
   float: none;
 }
-/* H2 */
-h2 {
-  text-align: center;
-  text-decoration: underline;
-  margin: 50px;
-}
 
+/* Image */
 .img img {
   width: 50%;
   margin: 2%;
@@ -101,7 +103,13 @@ h2 {
   margin: 6%;
 }
 
-/* ne marche pas */
-.img img:last-child {
+.img img:nth-child(11) {
   filter: grayscale(1);
+}
+
+/* Responsive desktop */
+@media screen and (min-width: 601px) {
+  body {
+    background-color: white;
+  }
 }
