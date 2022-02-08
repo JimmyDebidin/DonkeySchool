@@ -1,21 +1,43 @@
-h1 {
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: underline;
-  text-decoration-color: darkcyan;
+.header {
+  background-color: black;
   font-style: oblique;
-  color: darkcyan;
+  color: rgb(141, 220, 225);
+  font-family: Orbitron, Arial, Helvetica, sans-serif;
 }
 
-header {
-  background-color: black;
+h1 {
+  border: rgb(250, 162, 42) 2px solid;
+  text-decoration: underline;
+  text-align: center;
 }
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 50px;
+}
+
+body {
+  background-color: black;
+  color: rgb(141, 220, 225);
+  font-family: Orbitron, Arial, Helvetica, sans-serif;
+}
+
+.banniere {
+  width: 99%;
+  border-radius: 10px;
+  border-style: double;
+}
+
 /* Menu deroulant */
+
+ul {
+  list-style-type: none;
+}
+
 li {
   list-style: none !important;
-  color: darkcyan;
+  color: rgb(141, 220, 225);
   padding: 10px;
   font-size: 20px;
   text-decoration: none;
@@ -24,25 +46,28 @@ li {
 nav ul {
   padding: 0;
   margin: 0;
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Orbitron, Arial, Helvetica, sans-serif;
 }
 
 nav ul li {
   list-style: none;
   line-height: 44px;
   float: left;
-  background-color: black;
+  background-color: rgb(250, 162, 42);
+  text-decoration: underline;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 nav ul li a {
-  color: darkcyan;
+  color: rgb(141, 220, 225);
   font-weight: bold;
   padding: 10px;
   font-size: 20px;
   text-decoration: none;
 }
 li a:hover {
-  border-bottom: 3px darkcyan solid;
+  border-bottom: 3px rgb(141, 220, 225);
 }
 
 nav ul li ul {
@@ -61,23 +86,30 @@ nav ul li:hover ul li {
   float: none;
 }
 
-/* Image projet */
+/* Image */
 .img img {
-  border-radius: 3px;
+  width: 50%;
+  margin: 2%;
+  border-radius: 10px;
+  border-bottom: orange solid 2px;
+  border-top: orange solid 2px;
+  display: block;
+  margin: auto;
 }
 
-.img img:last-child {
+.img p {
+  text-justify: auto;
+  text-align: center;
+  margin: 6%;
+}
+
+.img img:nth-child(11) {
   filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  -o-filter: grayscale(1);
-  -ms-filter: grayscale(1);
 }
 
-.img img:hover {
-  opacity: 0.7;
-}
-
-nav {
-  display: flex;
+/* Responsive desktop */
+@media screen and (min-width: 601px) {
+  body {
+    background-color: white;
+  }
 }
